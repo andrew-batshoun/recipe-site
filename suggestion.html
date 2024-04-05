@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Recipes Site</a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="#">Suggestions</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="suggestion">
+  <h2>Suggestion</h2>
+  <form id="suggestion-form">
+    <div id="error-message" style="color: red;"></div>
+    <label for="recipe-name">Recipe Name:</label>
+    <input type="text" id="recipe-name" name="recipe-name" required><br>
+
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="ingredients" name="ingredients" required></textarea><br>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the terms and conditions</label><br>
+
+    <button type="submit" id="submit-btn" disabled>Submit</button>
+  </form>
+</section>
+
+<section id="submission-details">
+  <h2>Form Data</h2>
+  <div id="data"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
